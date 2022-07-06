@@ -16,7 +16,7 @@
 .Reducer<br>
 .Store<br>
 .Dispatch (it is execute the action)<br>
-<img src='./Screenshot/images.png />
+<img src='./Screenshot/img.png />
  <hr>
 
 <h4>Parent.js(nested component)</h4>
@@ -25,14 +25,10 @@ import './Parent.css';<br>
 function Parent() {<br>
      return (<br>
           <div class="parent"><br>
-               <h2>welcome to parent component</h2><br>
-
-               <Child></Child><br>
-
-          </div><br>
-     )
-
-}<br>
+               <p>welcome to parent component</p><br>
+                 <Child></Child><br>
+          </div>
+     )}<br>
 export default Parent;<br>
 <hr>
 <h4>child.js</h4>
@@ -41,11 +37,10 @@ import './Child.css'<br>
 function Child() {<br>
     return (<br>
         <div class="child"><br>
-            <h2>welcome to child component</h2><br>
+            <p>welcome to child component</p><br>
             <Grandchild></Grandchild><br>
         </div><br>
-    )
-}<br>
+    )}<br>
 export default Child;<br>
 <hr>
 <h4>Grandchild.js</h4>
@@ -54,17 +49,16 @@ import { decrement } from '../Action';<br>
 import './Grandchild.css'<br>
 function Grandchild() {<br>
      //we can access the store(state)in the component using useSelector method.<br>
-    <h4> const count = useSelector((state) => state.counter)</h4>
+     const count = useSelector((state) => state.counter)<br>
       //This is where we actually execute the action.<br>
-    <h4> const dispatch = useDispatch();</h4>
+    const dispatch = useDispatch()<br>
      return (<br>
           <div class="grandchild"><br>
-               <h2>welcome to grandchild component</h2><br>
+               <p>welcome to grandchild component</p><br>
                <h2>counter:{count}</h2>
                <button onClick={() => dispatch(decrement())}>DECREMENT</button><br>
           </div>
-     )
-     }<br>
+     )}<br>
 export default Grandchild;<br>
 <hr>
 <h2>Screenshot:</h2>
