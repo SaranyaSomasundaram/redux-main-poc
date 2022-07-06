@@ -34,10 +34,11 @@ export default Parent;
 
 ```
 <hr>
+
 ```
 child.js
 import Grandchild from "../Grandchild/Grandchild";
-import './Child.css'
+import './Child.css';
 function Child() {
     return (
         <div class="child">
@@ -49,6 +50,8 @@ export default Child;
 
 ```
 <hr>
+
+```
 <h4>Grandchild.js</h4>
 import { useDispatch, useSelector } from 'react-redux';<br>
 import { decrement } from '../Action';<br>
