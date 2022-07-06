@@ -16,20 +16,19 @@
 .Reducer<br>
 .Store<br>
 .Dispatch (it is execute the action)<br>
-<img src='./Screenshot/img.png />
+<img src="./Screenshot/img.png ">
  <hr>
-
 <h4>Parent.js(nested component)</h4>
 import Child from "../Child/Child ";<br>
 import './Parent.css';<br>
-function Parent() {<br>
-     return (<br>
-          <div class="parent"><br>
-               <p>welcome to parent component</p><br>
-                 <Child></Child><br>
+function Parent() {
+     return (
+          <div class="parent">
+               <p>welcome to parent component</p>
+                 <Child></Child>
           </div>
-     )}<br>
-export default Parent;<br>
+     )}
+export default Parent;
 <hr>
 <h4>child.js</h4>
 import Grandchild from "../Grandchild/Grandchild";<br>
