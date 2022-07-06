@@ -1,3 +1,4 @@
+//User can perform this action increment or decrement
 export const increment = () => {
     return {
         type: "increment"
