@@ -18,9 +18,8 @@
 .Dispatch (it is execute the action)<br>
 <img src="./Screenshot/img.png ">
  <hr>
-
+<h2>Parent.js(nested component)</h2>
 ```
-Parent.js(nested component)
 import Child from "../Child/Child ";
 import './Parent.css';
 function Parent() {
