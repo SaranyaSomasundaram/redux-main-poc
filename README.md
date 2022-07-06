@@ -18,6 +18,24 @@
 .Dispatch (it is execute the action)<br>
 <img src="./Screenshot/img.png ">
  <hr>
+ ```
+ ACTION:
+ index.js
+ //User can perform this action increment or decrement
+export const increment = () => {
+    return {
+        type: "increment"
+    }
+}
+
+export const decrement = () => {
+    return {
+        type: "decrement"
+    }
+}
+
+```
+<hr>
 
 ```
 Parent.js(nested component)
