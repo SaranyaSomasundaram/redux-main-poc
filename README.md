@@ -18,8 +18,9 @@
 .Dispatch (it is execute the action)<br>
 <img src="./Screenshot/img.png ">
  <hr>
-<h2>Parent.js(nested component)</h2>
+
 ```
+Parent.js(nested component)
 import Child from "../Child/Child ";
 import './Parent.css';
 function Parent() {
@@ -33,17 +34,20 @@ export default Parent;
 
 ```
 <hr>
-<h4>child.js</h4>
-import Grandchild from "../Grandchild/Grandchild";<br>
-import './Child.css'<br>
-function Child() {<br>
-    return (<br>
-        <div class="child"><br>
-            <p>welcome to child component</p><br>
-            <Grandchild></Grandchild><br>
-        </div><br>
-    )}<br>
-export default Child;<br>
+```
+child.js
+import Grandchild from "../Grandchild/Grandchild";
+import './Child.css'
+function Child() {
+    return (
+        <div class="child">
+            <p>welcome to child component</p>
+            <Grandchild></Grandchild>
+        </div>
+    )}
+export default Child;
+
+```
 <hr>
 <h4>Grandchild.js</h4>
 import { useDispatch, useSelector } from 'react-redux';<br>
