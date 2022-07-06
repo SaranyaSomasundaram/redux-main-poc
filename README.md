@@ -20,8 +20,8 @@
  <hr>
 ```
 <h4>Parent.js(nested component)</h4>
-import Child from "../Child/Child ";<br>
-import './Parent.css';<br>
+import Child from "../Child/Child ";
+import './Parent.css';
 function Parent() {
      return (
           <div class="parent">
