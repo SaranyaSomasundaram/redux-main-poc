@@ -52,23 +52,25 @@ export default Child;
 <hr>
 
 ```
-<h4>Grandchild.js</h4>
-import { useDispatch, useSelector } from 'react-redux';<br>
-import { decrement } from '../Action';<br>
-import './Grandchild.css'<br>
-function Grandchild() {<br>
-     //we can access the store(state)in the component using useSelector method.<br>
-     const count = useSelector((state) => state.counter)<br>
-      //This is where we actually execute the action.<br>
-    const dispatch = useDispatch()<br>
-     return (<br>
-          <div class="grandchild"><br>
-               <p>welcome to grandchild component</p><br>
-               <h2>counter:{count}</h2>
-               <button onClick={() => dispatch(decrement())}>DECREMENT</button><br>
+Grandchild.js
+import { useDispatch, useSelector } from 'react-redux';
+import { decrement } from '../Action';
+import './Grandchild.css';
+function Grandchild() {
+     //we can access the store(state)in the component using useSelector method.
+     const count = useSelector((state) => state.counter)
+      //This is where we actually execute the action.
+    const dispatch = useDispatch()
+     return (
+          <div class="grandchild">
+               <p>welcome to grandchild component</p>
+               counter:{count}
+               <button onClick={() => dispatch(decrement())}>DECREMENT</button>
           </div>
-     )}<br>
-export default Grandchild;<br>
+     )}
+export default Grandchild;
+
+```
 <hr>
 <h2>Screenshot:</h2>
 <img src="./Screenshot/Capture.png">
