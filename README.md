@@ -1,6 +1,6 @@
 <h2>REDUX IN REACT JS:</h2>
 <hr>
-<h3>Instilation:</h3><br>
+<h3>Installation:</h3><br>
 1.npx create-react-app(create the react application)<br>
 2.npm install redux(add the redux packages in react)<br>
 3.npm install react-redux(it is used to get the {Provider})<br>
@@ -18,6 +18,7 @@
 .Dispatch (it is execute the action)<br>
 <img src="./Screenshot/img.png ">
  <hr>
+ 
 ```
 <h4>Parent.js(nested component)</h4>
 import Child from "../Child/Child ";
@@ -30,6 +31,7 @@ function Parent() {
           </div>
      )}
 export default Parent;
+
 ```
 <hr>
 <h4>child.js</h4>
